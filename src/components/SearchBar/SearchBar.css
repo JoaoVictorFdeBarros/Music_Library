@@ -1,0 +1,49 @@
+.SearchBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding-right: 5vh;
+}
+
+.SearchBar .Input{
+    color: var(--primary-color);
+    height: 3vh;
+    width: 60%;
+    margin: 0;
+    border-radius: 0.5em;
+    border: solid thin var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.SearchBar .Input::placeholder{
+    color: var(--faded-color);
+}
+
+.SearchBar .Icon{
+    cursor: pointer;
+    transform: scale(2);
+    margin: 0 0vh 0 0vh;
+    color: var(--primary-color);
+}
+
+@media (orientation: portrait) {
+    .SearchBar{
+        flex: 0;
+    }
+    .SearchBar .Input{
+        width: 80vw;
+        margin: 0 2vh 0 2vh;
+    }
+    .SearchBar .Icon{
+        transform: scale(1.2);
+        margin: 0 0vh 0 0vh;
+        color: var(--primary-color);
+    }
+}
+
+@media (orientation: portrait) {
+    .Logo{
+        display: none;
+    }
+}

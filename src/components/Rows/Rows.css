@@ -1,0 +1,12 @@
+.Rows{
+    flex: 1;
+    width: 80vh;
+    height: 80vh;
+    overflow: auto;
+}
+
+@media (orientation: portrait) {
+    .Rows{
+        width: 100vw;
+    }
+}

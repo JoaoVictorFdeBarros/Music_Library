@@ -1,0 +1,81 @@
+.Track{
+    color: var(--primary-color);
+    font-size:medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vh;
+    padding: 7.5vh 1vh 2vh 1vh;
+    transition: 300ms;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.Track:hover{
+    background: linear-gradient(to bottom, var(--faded-color), var(--hover-color));
+}
+
+.Track img {
+    border-radius: 0.5em;
+    width: 15vh;
+    height: 15vh;
+    transition: 300ms;
+}
+
+.Track .Title{
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    max-width: 100%;
+}
+
+.Track .Subtitle{
+    color: var(--primary-color);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.Track img.playing {
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+}
+
+
+.Track .Circle{
+    opacity: 0;
+    content: '';
+    width: 3vh; 
+    height: 3vh;
+    border-radius: 50%; 
+    margin-bottom: -9vh;
+    z-index: 1;
+}
+
+.Track .VisibleCircle{
+    opacity: 1;
+    content: '';
+    width: 3vh; 
+    height: 3vh;
+    background-color: var(--secondary-color); 
+    border-radius: 50%; 
+    margin-bottom: -9vh;
+    z-index: 1;
+}
+
+
+@media (orientation: portrait) {
+    .Track{
+        padding: 7.5vh 0 2vh 0;
+       transform: scale(0.75);
+    }
+
+}

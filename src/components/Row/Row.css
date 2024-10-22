@@ -1,0 +1,101 @@
+.Row{
+    color: var(--primary-color);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Row .RowTitle{
+    font-weight: bold;
+    margin: 0;
+    margin-right: 20vh;
+}
+
+.Row:hover .ScrollButton{
+    opacity: 1;
+}
+
+.Row .Tracks{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    overflow:hidden;
+    padding: 0vh 0 0vh 0;
+}
+
+.Row .TrackButtons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.Row .ScrollButton{
+    color: var(--primary-color);
+    background: none;
+    padding: 0;
+    height: 100%;
+    font-size: 4vh;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    opacity: 0;
+    width: auto;
+}
+
+.Row .ScrollButtonRight{
+    margin-left: -2.5vh;
+    flex: 1;
+}
+
+.Row .ScrollButtonLeft{
+    margin-right: -2.5vh;
+    z-index: 1;
+}
+.Row .Arrow{
+    transform: scale(1.5);
+}
+
+.WrapRow{
+    flex-wrap: wrap;
+}
+
+.NoWrapRow{
+    flex-wrap: nowrap;
+}
+
+@media (orientation: portrait) {
+    .Row{
+        width: 99vw;
+        overflow:scroll;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+    .Row .ScrollButton{
+        width: 100vw;
+        padding: 0 0vh 0 0vh;
+        overflow: hidden;
+
+    }
+    .Row .TrackButtons{
+        width: auto;
+        height: auto;
+    }
+    .Row .RowTitle{
+        font-weight: bold;
+        margin: 0;
+        margin-top: 2vw;
+        margin-left: 2vw;
+    }
+
+    .Row .ScrollButtonRight{
+        display: none;
+    }
+    
+    .Row .ScrollButtonLeft{
+        display: none;
+    }
+}

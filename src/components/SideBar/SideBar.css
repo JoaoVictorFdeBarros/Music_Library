@@ -1,0 +1,177 @@
+.SideBar{
+    width: 20vh;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:start;
+    padding-left: 1vh;
+
+    color: var(--primary-color);
+}
+
+.SideBar .Categories{
+    height: 100%;
+    width: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+
+    overflow: auto;
+    direction: rtl;
+}
+
+.SideBar .Category{
+    opacity: 0.75;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+    margin-left: 1vh;
+    width: 18vh;
+
+    padding: 2vh 1vh 2vh 0;
+
+    cursor: pointer;
+    transition: 200ms;
+
+    direction: ltr;
+}
+
+.SideBar .Category:hover{
+    background-color: var(--hover-color);
+}
+
+.SideBar .Category p{
+    padding-left: 1vh;
+}
+
+.SideBar .Selected{
+    opacity: 1;
+}
+
+.SideBar .Footnote{
+    font-size: small;
+    color: var(--faded-color);
+}
+
+.SideBar .Cover{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 10em;
+}
+
+.SideBar .EditRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2vh;
+}
+
+.SideBar .Icon {
+    color: var(--primary-color);
+    scale: 1.5;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.SideBar .Animated:hover {
+    animation: pulse 1s infinite; 
+    cursor: grab;
+}
+
+
+.SideBar .ArtistCover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.SideBar .EditMessage{
+    font-size: small;
+    color: var(--faded-color);
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(var(--initial-rotate, 0deg));
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(var(--initial-rotate, 0deg));
+    }
+}
+
+
+@media (orientation: portrait) {
+    .SideBar {
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 1vh 0;
+        overflow-x: auto;
+        padding-left: 0;
+    }
+
+    .SideBar .Categories {
+        flex-direction: row;
+        width: fit-content;
+        height: 100%;
+        overflow-x: auto; 
+        direction: ltr;
+        align-items: center;
+    }
+
+    .SideBar .Category {
+        width: auto;
+        margin-left: 0;
+        margin-right: 1vh;
+        padding: 1vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SideBar .EditRow{
+        display: flex;
+        justify-content: end;
+    }
+
+    .SideBar .EditRow .Icon{
+        transform: scale(0.75);
+        margin-right: 5vw;
+    }
+
+    .SideBar .Category .Icon{
+        transform: scale(0.5);
+        margin-top: 2vw;
+    }
+
+    .SideBar p{
+        display: none;
+    }
+
+    .SideBar .Cover {
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .SideBar .Footnote{
+        padding-bottom: 0;
+    }
+
+    .SideBar .ArtistCover .DefaultCategory{
+        display:block
+    }
+}

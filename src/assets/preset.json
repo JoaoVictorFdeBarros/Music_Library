@@ -1,0 +1,10 @@
+{
+    "initialGenres": [        
+        { "position": 0, "value":  132},
+        { "position": 1, "value":  152},
+        { "position": 2, "value":  80}
+    ],
+
+    "initialArtists": [
+    ]
+}
