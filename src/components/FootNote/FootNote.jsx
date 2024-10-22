@@ -15,7 +15,7 @@ export default function FootNote(props){
         <div className={`FootNote ${props.Centralized ? 'Centralized':''}`}>
             <div className='Clean' onClick={HandleCleanStorage}>Limpar alterações</div>
             <div className='Line'>
-                <div className='Row'> <FaGithub className='Icon'/><a href='https://developers.deezer.com/api'>Repositório</a></div>
+                <div className='Row'> <FaGithub className='Icon'/><a href='https://github.com/JoaoVictorFdeBarros/Music_Library'>Repositório</a></div>
                 <div className='Row'> <FaDeezer className='Icon'/> <p>Desenvolvido com <a href='https://developers.deezer.com/api'>Deezer Developers</a></p></div>
                 <div className='Row'> <CiLinkedin className='Icon'/><a href='https://www.linkedin.com/in/jo%C3%A3o-victor-francisco-de-barros-a602072a8/'>LinkedIn</a></div>
             </div>
