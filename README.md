@@ -15,7 +15,7 @@ Disponivel no <a href='google.com'>GitHub Pages</a>
 
 ## Instalação
 ```bash
-git clone ...
+git clone https://github.com/JoaoVictorFdeBarros/Music_Library.git
 ```
 
 ```bash
