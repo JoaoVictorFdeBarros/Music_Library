@@ -13,6 +13,10 @@ Este é um projeto React que exibe uma biblioteca de músicas, permitindo que os
 ## Acesso
 Disponivel no <a href='google.com'>GitHub Pages</a>
 
+## Funcionamento
+Os dados são provenientes da <a href='https://developers.deezer.com/api'> Api do Deezer </a>, que permite o acesso às imagens e demosntrações das músicas de modo gratuíto para fins nao comerciais, como deescrito nos <a href='https://developers.deezer.com/termsofuse'>Termos de uso </a>.
+A aplicação faz requisições à um midleware simples, hospedado na plataforma <a href='https://vercel.com/'>Vercel </a> que controla o fluxo de dados, disponivel em <a href='https://musiclibraryapi.vercel.app/api'>https://musiclibraryapi.vercel.app/api</a>
+
 ## Instalação
 ```bash
 git clone https://github.com/JoaoVictorFdeBarros/Music_Library.git
