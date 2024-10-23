@@ -1,5 +1,6 @@
 {
   "name": "music",
+  "homepage": "https://joaovictorfdebarros.github.io/Music_Library/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -4,10 +4,10 @@ import HomePage from './components/HomePage/HomePage';
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Routes>
-                <Route path={'/'} element={<HomePage />} />
-                <Route path="/:query" element={<HomePage Query/>} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/:query" element={<HomePage />} />
             </Routes>
         </Router>
     );
