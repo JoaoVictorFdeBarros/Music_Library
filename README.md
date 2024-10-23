@@ -11,7 +11,7 @@ Este é um projeto React que exibe uma biblioteca de músicas, permitindo que os
 - **Play de Faixas**: Integração de um player para faixas de músicas com pré-visualização.
 
 ## Acesso
-Disponivel no <a href='google.com'>GitHub Pages</a>
+Disponivel no <a href='https://joaovictorfdebarros.github.io/Music_Library'>GitHub Pages</a>
 
 ## Funcionamento
 Os dados são provenientes da <a href='https://developers.deezer.com/api'> Api do Deezer </a>, que permite o acesso às imagens e demosntrações das músicas de modo gratuíto para fins nao comerciais, como deescrito nos <a href='https://developers.deezer.com/termsofuse'>Termos de uso </a>.
