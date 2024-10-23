@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Music_Library/static/css/main.d1b96acc.css",
+    "main.js": "/Music_Library/static/js/main.fda2e685.js",
+    "static/media/logoLight.png": "/Music_Library/static/media/logoLight.a234a0283defa30cdfdd.png",
+    "static/media/logo.png": "/Music_Library/static/media/logo.e22e585e04871c3bcd2a.png",
+    "index.html": "/Music_Library/index.html",
+    "main.d1b96acc.css.map": "/Music_Library/static/css/main.d1b96acc.css.map",
+    "main.fda2e685.js.map": "/Music_Library/static/js/main.fda2e685.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1b96acc.css",
+    "static/js/main.fda2e685.js"
+  ]
+}
